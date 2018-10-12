@@ -17,25 +17,7 @@
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#if defined(BOARD_ID_arduino_zero)
-  #include "board_definitions_arduino_zero.h"
-#elif defined(BOARD_ID_genuino_zero)
-  #include "board_definitions_genuino_zero.h"
-#elif defined(BOARD_ID_arduino_mkr1000)
-  #include "board_definitions_arduino_mkr1000.h"
-#elif defined(BOARD_ID_genuino_mkr1000)
-  #include "board_definitions_genuino_mkr1000.h"
-#elif defined(BOARD_ID_arduino_mkrzero)
-  #include "board_definitions_arduino_mkrzero.h"
-#elif defined(BOARD_ID_arduino_mkrfox1200)
-  #include "board_definitions_arduino_mkrfox1200.h"
-#elif defined(BOARD_ID_arduino_mkrgsm1400)
-  #include "board_definitions_arduino_mkrgsm1400.h"
-#elif defined(BOARD_ID_arduino_mkrwan1300)
-  #include "board_definitions_arduino_mkrwan1300.h"
-#elif defined(BOARD_ID_arduino_mkrwifi1010)
-  #include "board_definitions_arduino_mkrwifi1010.h"
-#elif defined(BOARD_ID_reprapworld_minitronics20)
+#if defined(BOARD_ID_reprapworld_minitronics20)
   #include "board_definitions_reprapworld_minitronics20.h"
 #else
   #error You must define a BOARD_ID and add the corresponding definitions in board_definitions.h
