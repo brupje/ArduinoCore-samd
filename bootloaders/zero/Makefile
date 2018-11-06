@@ -57,12 +57,12 @@ SIZE=$(ARM_GCC_PATH)size
 
 # -----------------------------------------------------------------------------
 # Boards definitions
-BOARD_ID?=arduino_zero
+BOARD_ID?=reprapworld_minitronics20
 NAME?=samd21_sam_ba
 
 # -----------------------------------------------------------------------------
 # Compiler options
-CFLAGS_EXTRA=-D__SAMD21G18A__ -DBOARD_ID_$(BOARD_ID)
+CFLAGS_EXTRA=-D__SAMD21J18A__ -DBOARD_ID_$(BOARD_ID)
 CFLAGS=-mthumb -mcpu=cortex-m0plus -Wall -c -std=gnu99 -ffunction-sections -fdata-sections -nostdlib -nostartfiles --param max-inline-insns-single=500
 ifdef DEBUG
   CFLAGS+=-g3 -O1 -DDEBUG=1

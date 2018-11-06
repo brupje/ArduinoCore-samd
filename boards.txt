@@ -20,15 +20,15 @@
 minitronics20.name=Minitronics v2.0
 minitronics20.vid.0=0x2341
 minitronics20.pid.0=0x8054
+minitronics20.vid.1=0x2341
+minitronics20.pid.1=0x0054
 
-
-minitronics20.upload.tool=avrdude
-minitronics20.upload.protocol=stk500v2
+minitronics20.upload.tool=bossac
+minitronics20.upload.protocol=sam-ba
 minitronics20.upload.maximum_size=262144
 minitronics20.upload.use_1200bps_touch=true
 minitronics20.upload.wait_for_upload_port=true
 minitronics20.upload.native_usb=true
-minitronics20.upload.speed=57600
 minitronics20.build.mcu=cortex-m0plus
 minitronics20.build.f_cpu=48000000L
 minitronics20.build.usb_product="Minitronics v2.0"
