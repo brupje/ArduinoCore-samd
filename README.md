@@ -1,4 +1,4 @@
-# Arduino Core for SAMD21 CPU
+# RRW Core for SAMD21 CPU
 
 This repository contains the source code and configuration files of the Arduino Core
 for Atmel's SAMD21 processor (used on the Arduino/Genuino Zero, MKR1000 and MKRZero boards).
@@ -8,7 +8,7 @@ for Atmel's SAMD21 processor (used on the Arduino/Genuino Zero, MKR1000 and MKRZ
 This core is available as a package in the Arduino IDE cores manager.
 Just open the "Boards Manager" and install the package called:
 
-"Arduino SAMD Boards (32-bit ARM Cortex-M0+)"
+"RepRapWorld SAMD Boards (32-bit ARM Cortex-M0+)"
 
 ## Support
 
