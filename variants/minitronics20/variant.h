@@ -53,8 +53,8 @@ extern "C"
  *----------------------------------------------------------------------------*/
 
 // Number of pins defined in PinDescription array
-#define PINS_COUNT           (40u)
-#define NUM_DIGITAL_PINS     (34u)
+#define PINS_COUNT           (57u)
+#define NUM_DIGITAL_PINS     (57u)
 #define NUM_ANALOG_INPUTS    (6u)
 #define NUM_ANALOG_OUTPUTS   (1u)
 #define analogInputToDigitalPin(p)  ((p < 6u) ? (p) + 28u : -1)
@@ -123,6 +123,12 @@ static const uint8_t ATN = PIN_ATN;
 #define PIN_SERIAL1_TX       (1ul)
 #define PAD_SERIAL1_TX       (UART_TX_PAD_2)
 #define PAD_SERIAL1_RX       (SERCOM_RX_PAD_3)
+
+// Serial2
+#define PIN_SERIAL2_RX       (45ul)
+#define PIN_SERIAL2_TX       (44ul) 
+#define PAD_SERIAL2_TX       (UART_TX_PAD_2)
+#define PAD_SERIAL2_RX       (SERCOM_RX_PAD_3)
 
 /*
  * SPI Interfaces
@@ -195,7 +201,7 @@ extern SERCOM sercom5;
 
 extern Uart Serial;
 extern Uart Serial1;
-
+extern Uart Serial2;
 #endif
 
 // These serial port names are intended to allow libraries and architecture-neutral
@@ -216,8 +222,8 @@ extern Uart Serial1;
 #define SERIAL_PORT_USBVIRTUAL      SerialUSB
 #define SERIAL_PORT_MONITOR         Serial
 // Serial has no physical pins broken out, so it's not listed as HARDWARE port
-#define SERIAL_PORT_HARDWARE        Serial1
-#define SERIAL_PORT_HARDWARE_OPEN   Serial1
+#define SERIAL_PORT_HARDWARE_OPEN        Serial2
+#define SERIAL_PORT_HARDWARE   Serial1
 
 #endif /* _VARIANT_MINITRONICS_20_ */
 
